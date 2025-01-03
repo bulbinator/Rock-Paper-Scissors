@@ -1,12 +1,12 @@
 function getComputerChoice()
 {
-    let n = getRandomInt(3)
+    let n = Math.random()
 
-    if (n == 0)
+    if (n < 1/3)
     {
         return "Rock"
     }
-    else if (n == 1)
+    else if (n < 2/3)
     {
         return "Paper"
     }
