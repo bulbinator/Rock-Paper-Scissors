@@ -15,3 +15,23 @@ function getComputerChoice()
         return "Scissors"
     }
 }
+
+function getHumanChoice()
+{
+    let input = ""
+    let choices = ["ROCK", "PAPER", "SCISSORS"]
+
+    while(true)
+    {
+        input = prompt("Enter: Rock, Paper, or Scissors")
+        input = input.toUpperCase()
+
+        if (choices.includes(input))
+        {
+            break
+        }
+    }
+
+    console.log(input)
+    
+}
